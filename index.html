@@ -1,0 +1,179 @@
+<!DOCTYPE html>  <!-- Indica la versión de html -->
+<html lang="es"> <!-- Indica el lenguaje en el que va a reconocer el código (en=inglés, es=español)-->
+
+
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Información para el navegador -->
+    <title>LSL</title>
+    <!-- SE AGREGA EL NORMALIZE, IMPORTANTE: ESTE DEBE SER SIEMPRE EL PRIMERO -->
+     <link rel="preload" href="css/normalize.css" as="style">
+     <link rel="stylesheet" href="css/normalize.css">
+
+    <!-- Se agrega el link de la fuente (FONT:PLAYWRITE CU DE GOOGLE FONTS)-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&display=swap" rel="stylesheet">
+    <!-- Se termina de agregar el link de la fuente-->
+
+    <!-- Se agrega el link de la fuente (FONT:DM Serif Static DE GOOGLE FONTS)-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baskervville+SC&family=DM+Serif+Text:ital@0;1&display=swap" rel="stylesheet">
+    <!-- Se termina de agregar el link de la fuente-->
+    
+    <link rel="preload" href="styles.css" as="style"> <!-- Línea que optimiza la página creada -->
+    <link href="styles.css" rel="stylesheet">
+</head>
+
+
+<body>
+
+    <!--<header> Corresponde a la parte superior de la página 
+        <h1 class="titulo" > PL TRONIC'S <span> tu sello de calidad </span> </h1> ETIQUETA UNO 
+    </header> -->
+
+    <div class="nav-background"> <!-- Usado para acomodar a lo largo el color de fondo -->
+        <nav class="navegacion-principal contenedor"> <!-- Usado para links de navegación de UN NIVEL -->
+            <a href="inicio.html"> Nuestro trabajo </a>  <!-- Son links a otras pestañas -->
+            <a href="ofertas.html"> Paquetes y ofertas </a>
+            <a href="sobre nosotros.html"> Contacto </a>
+        </nav>
+    </div>
+
+    <!--  <img src="imagenes/pltron.jpeg">  ASI SE AGREGA UNA IMAGEN EN HTML-->
+
+    <section class="imagen"> <!-- Después de un header FORZOSAMENTE va un main o un section -->
+        <div class="contenido-imagen">              <!-- Esto es para poder afrupar todo y meter la imagen-->
+            <h2 class="empresa"> PL Tronic's </h2> <!-- ETIQUETA DOS -->
+
+            <div class="ubicacion"> 
+                <!-- Comienza código para la imagen-->
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="60" height="60" viewBox="0 0 24 24" stroke-width="2" stroke="#FFC107" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
+                    <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" />
+                </svg> <!-- Termina cógigo para la imagen -->
+    
+                Ixtapan de la Sal, Edo. de México 
+            </div>
+    
+            <a class="boton" href="contacto.html"> Contactar </a>
+        </div>
+    </section>
+
+    <main class="contenedorsombra"> <!-- Elemento principal (solo debe existir un main) -->
+
+        <h3 class="titulomisservicios"> MIS SERVICIOS </h3> <!-- ETIQUETA TRES -->
+
+        <div class="servicio">
+
+            <section class="servicios">
+                <h4> Diseño electrónico </h4>
+
+                <div class="iconos">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-cpu" width="80" height="80" viewBox="0 0 24 24" stroke-width="2" stroke="#009988" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M5 5m0 1a1 1 0 0 1 1 -1h12a1 1 0 0 1 1 1v12a1 1 0 0 1 -1 1h-12a1 1 0 0 1 -1 -1z" />
+                        <path d="M9 9h6v6h-6z" />
+                        <path d="M3 10h2" />
+                        <path d="M3 14h2" />
+                        <path d="M10 3v2" />
+                        <path d="M14 3v2" />
+                        <path d="M21 10h-2" />
+                        <path d="M21 14h-2" />
+                        <path d="M14 21v-2" />
+                        <path d="M10 21v-2" />
+                    </svg>
+                </div>
+
+                <p> akdjvnirgbeqiaguakhvbuqbiubfañefwiuebvasjdbva </p>
+            </section>
+
+            <section class="servicios">
+                <h4> Renta de audio </h4>
+
+                <div class="iconos">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-deezer" width="80" height="80" viewBox="0 0 24 24" stroke-width="2" stroke="#009988" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 16.5h2v.5h-2z" />
+                        <path d="M8 16.5h2.5v.5h-2.5z" />
+                        <path d="M16 17h-2.5v-.5h2.5z" />
+                        <path d="M21.5 17h-2.5v-.5h2.5z" />
+                        <path d="M21.5 13h-2.5v.5h2.5z" />
+                        <path d="M21.5 9.5h-2.5v.5h2.5z" />
+                        <path d="M21.5 6h-2.5v.5h2.5z" />
+                        <path d="M16 13h-2.5v.5h2.5z" />
+                        <path d="M8 13.5h2.5v-.5h-2.5z" />
+                        <path d="M8 9.5h2.5v.5h-2.5z" />
+                    </svg>
+                </div>
+
+                <p> akdjvnirgbeqiaguakhvbuqbiubfañefwiuebvasjdbva </p>
+            </section>
+
+            <section class="servicios">
+                <h4> Diseño web </h4>
+
+                <div class="iconos">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-device-laptop" width="80" height="80" viewBox="0 0 24 24" stroke-width="2" stroke="#009988" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 19l18 0" />
+                        <path d="M5 6m0 1a1 1 0 0 1 1 -1h12a1 1 0 0 1 1 1v8a1 1 0 0 1 -1 1h-12a1 1 0 0 1 -1 -1z" />
+                    </svg>
+                </div>
+
+                <p> akdjvnirgbeqiaguakhvbuqbiubfañefwiuebvasjdbva </p>
+            </section> 
+        </div> <!-- Cierre de clase sercicios -->
+
+        <section>
+            <!--<h3> Contáctanos </h3>-->
+
+            <form class="formulario"> <!-- Inicia el formulario -->
+                <fieldset>
+                    <legend> Contáctanos llenando todos los campos </legend>
+
+
+                    <div class="contenedor-campos">
+                        <div class="campo">
+                            <label> Nombre </label> <!-- Etiqueta de nombre -->
+                            <input class="input-text" type="text" placeholder="Nombre">     <!-- Cpn esto se crea el recuadro de nombre -->    
+                        </div>
+
+                        <div class="campo">
+                            <label> Teléfono </label> <!-- Etiqueta de nombre -->
+                            <input class="input-text" type="tel" placeholder="Teléfono">     <!-- Cpn esto se crea el recuadro de nombre -->
+                        </div>
+
+                        <div class="campo">
+                            <label> Correo </label> <!-- Etiqueta de nombre -->
+                            <input class="input-text" type="email" placeholder="abc@mail.com">     <!-- Cpn esto se crea el recuadro de nombre -->
+                        </div>
+
+                        <div class="campo">
+                            <label> Mensaje </label>
+                            <textarea class="input-text"></textarea>
+                        </div>
+                    </div> <!-- Contenedor de los campos -->
+
+
+                    <div class="alineacion flex">
+                        <input class="boton w-100" type="submit" value="Enviar">
+                    </div>
+
+                </fieldset>
+            </form>
+
+        </section>
+
+    </main>
+
+    <footer class="footer"> <!-- Pie de la página web -->
+        <p> Todos los derechos reservados. Lorena Salazar Freelancer </p>
+    </footer>
+
+</body>
+
+
+</html>
