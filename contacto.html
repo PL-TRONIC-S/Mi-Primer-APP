@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title> <!-- T{itulo que se va a observar en la pestaña del navegador-->
+
+    <!-- SE AGREGA EL NORMALIZE, IMPORTANTE: ESTE DEBE SER SIEMPRE EL PRIMERO -->
+    <link rel="preload" href="css2/normalize.css" as="style">
+    <link rel="stylesheet" href="css2/normalize.css">
+    
+    <!-- Se agrega el link de la fuente (FONT:Work sans CU DE GOOGLE FONTS)-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- Se agrega la hoja de estilos de CSS -->
+    <link rel="preload" href="styles.css" as="style"> <!-- Línea que optimiza la página creada -->
+    <link rel="stylesheet" href="styles.css"> <!-- Shift + Alt + flecha hacia abajo para duplicar la línea de código-->
+
+</head>
+
+<body>
+
+    <div class="nav-background"> <!-- Usado para acomodar a lo largo el color de fondo -->
+        <nav class="navegacion-principal contenedor"> <!-- Usado para links de navegación de UN NIVEL -->
+            <a href="index.html"> Inicio </a>  <!-- Son links a otras pestañas -->
+            <a href="inicio.html"> Nuestro trabajo </a>  <!-- Son links a otras pestañas -->
+            <a href="ofertas.html"> Paquetes y ofertas </a>
+            <a href="contacto.html"> Contacto </a>
+        </nav>
+    </div>
+
+
+    <section>
+        <!--<h3> Contáctanos </h3>-->
+
+        <form class="formulario"> <!-- Inicia el formulario -->
+            <fieldset>
+                <legend> Contáctanos llenando todos los campos </legend>
+
+
+                <div class="contenedor-campos">
+                    <div class="campo">
+                        <label> Nombre </label> <!-- Etiqueta de nombre -->
+                        <input class="input-text" type="text" placeholder="Nombre">     <!-- Cpn esto se crea el recuadro de nombre -->    
+                    </div>
+
+                    <div class="campo">
+                        <label> Teléfono </label> <!-- Etiqueta de nombre -->
+                        <input class="input-text" type="tel" placeholder="Teléfono">     <!-- Cpn esto se crea el recuadro de nombre -->
+                    </div>
+
+                    <div class="campo">
+                        <label> Correo </label> <!-- Etiqueta de nombre -->
+                        <input class="input-text" type="email" placeholder="abc@mail.com">     <!-- Cpn esto se crea el recuadro de nombre -->
+                    </div>
+
+                    <div class="campo">
+                        <label> Mensaje </label>
+                        <textarea class="input-text"></textarea>
+                    </div>
+                </div> <!-- Contenedor de los campos -->
+
+
+                <div class="alineacion flex">
+                    <input class="boton w-100" type="submit" value="Enviar">
+                </div>
+
+            </fieldset>
+        </form>
+
+    </section>
+
+    
+</body>
+</html>
