@@ -164,11 +164,13 @@ p{
 
 .nav-background{
     background-color: var(--black); /* Da color a toda la barra de arriba */
+    /*position: fixed;*/
 }
 
 .navegacion-principal{
-    /* A continuación, se acomoda el texto de la barra de hasta arriba (CON FLEXBOX) */
-    display: flex;
+    /* A continuación, se acomoda el texto de la barra de hasta arriba (CON FLEXBOX) (aqui se tiene control de los titulos de hasta arriba)*/
+    display: grid; /*Añade todas las caracteristicas de CSS grid*/
+    grid-template-columns: repeat(3, 1fr); /* Creación de las columnas */
 }
 
 .navegacion-principal a{
@@ -183,8 +185,8 @@ p{
 
 /* Trabajamos ahora en el color de fondo que se dispara al seleccionar algún parametro de la navegación*/
 .navegacion-principal a:hover{
-    background-color: var(--copy);
-    color: var(--black);
+    /*background-color: var(--orange);*/
+    color: var(--orange);
 }
 
 /* DIFERENTES TAMAÑOS PARA DIFERENTES DISPOSITIVOS 
@@ -251,7 +253,6 @@ p{
 .servicios h4{
     color: var(--black);
     font-size: 2rem;
-    color: var(--black);
 }
 
 .servicios p{
@@ -270,12 +271,17 @@ p{
 }
 
 /*---------------------------- FORMULARIO ------------------------------*/
+/*.formularioGeneral{
+    background-color: var(--orange);
+}*/
+
 .formulario{
     background-color: var(--brownL);
     width: min(60rem, 100%); /* Utiliza el valor más pequeño */
     margin: 0 auto; /* (ALINEA HORIZONTALMENTE) Usamos magin para centrar CUANDO su padre no es un display flex*/
     padding: 2rem;
     border-radius: 1rem;
+    margin-bottom: 4rem;
 }
 
 .formulario fieldset{
@@ -330,7 +336,15 @@ p{
 /*---------------------------- FOOTER ----------------------------------*/
 .footer{
     text-align: center;
-    
+    background-color: var(--black);
+    color: var(--white);
+    margin: 8rem, 8rem;
+    display:block;
+    text-align: center;
+    padding: 0.5rem; /* Dibuja el cuadro que aparece al seleccionar un parametro de la navegación */
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    color:var(--white);    /* Esto le da color a las letras */
+    font-size: 2rem;
 }
 
 /*---------------------- COMENZANDO CON NOSOTROS ----------------------*/
@@ -338,10 +352,11 @@ p{
 /*-------------------------- imagen de fondo --------------------------*/
 
 .sobreNosotros{ /* Cuenta como el body de Sobre Nosotros*/
-    background-color: #212121;
-    background-image: url(imagenes/fondo.jpeg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: var(--black);
+    /*background-image: url(imagenes/pltron.jpeg);
+    /*background-image: linear-gradient(to top, var(--gray) 100%, var(--white) 0%);*/
+    /*background-repeat: no-repeat;
+    background-size: cover;*/
 }
 
 /*------------------------ negro de fondo --------------------------------*/
@@ -353,41 +368,73 @@ p{
     /*height: 100%; /* Extiende la sombra al máximo posible */
 /*}
 
-/*---------------------- texto de sobre nosotros -------------------------*/
+/*---------------------- titulo de sobre nosotros -------------------------*/
 
 .sobreNosotros_texto{
     text-align: center;
-    color: var(--white);
+    color: var(--orange);
+    /*font-family: "Pacifico", cursive;*/
 }
 
-/*------------------------ texto de párrafo -------------------------------*/
-
-.nosotros_texto{
-    color: var(--white);
-    font-size: 1.8rem;
-}
-
+/*------------------------*/
 @media (min-width: 768px){
+    .nuestraChamba{
+        display: grid;
+        grid-template-columns: repeat(2, 10fr); /* Hacemos dos columnas */
+        column-gap: 2rem; /* Crea un espacio entre el texto y la imagen de 2 rem */
+        margin-left: 10rem;
+    }
+
     .nosotros_texto{
-        color: var(--white);
-        margin-left: 30rem;
-        margin-right: 30rem;
+        margin-top: 7rem;   
     }
 }
 
+.nosotros_texto{
+    text-align: center;
+    color: var(--white);
+    font-size: 1.8rem;
+}
+
+.nosotros_slogan{
+    color: var(--white);
+}
+
+.nuestraChamba__contenido{
+
+}
+
+.nuestraChamba__imagen{
+    height: 30rem;
+    width: 50rem;
+    align-items: center;
+}
+
+
+
 /*------------------------ ¿Por qué comprar con nosotros? -------------------*/
+/*.contenedor_comprar{
+    background-color: var(--orange);
+    -webkit-box-shadow: 22px 34px 12px 25px rgba(0,0,0,0.75);
+    -moz-box-shadow: 22px 34px 12px 25px rgba(0,0,0,0.75);
+    box-shadow: 22px 34px 12px 25px rgba(0,0,0,0.75);
+    border-radius:6%;
+}*/
 
 .comprar__titulo{
-    /*margin-left: 14rem;*/
-    font-size: 1.8rem;
-    color: var(--white); 
+    margin-top: 5rem;
+    font-size: 2rem;
+    color: var(--orange); 
+    text-align: center;
 }
 
 @media (min-width: 768px){
     .comprar__titulo{
         margin-left: 14rem;
-        font-size: 1.8rem;
-        color: var(--white);
+        font-size: 2.5rem;
+        color: var(--orange);
+        text-align: center;
+        margin-bottom: 5rem;
     }
 }
 
@@ -416,5 +463,17 @@ p{
 
 .bloque__titulo{
     margin: 0;/* Quita la separación entre titulos*/
+    color: var(--orange);
 }
 
+.bloque__contenido{
+    color: var(--white);
+    text-align: center;
+}
+
+/*---------------------- COMENZANDO CON PAQUETES Y OFERTAS ----------------------*/
+
+/*-------------------------- imagen de fondo --------------------------*/
+.ofertas{
+    background-color: var(--black);
+}

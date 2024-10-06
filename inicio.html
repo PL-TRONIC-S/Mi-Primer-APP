@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nuestro trabajo</title> <!-- T{itulo que se va a observar en la pestaña del navegador-->
+    <title> Nosotros </title> <!-- T{itulo que se va a observar en la pestaña del navegador-->
 
     <!-- SE AGREGA EL NORMALIZE, IMPORTANTE: ESTE DEBE SER SIEMPRE EL PRIMERO -->
     <link rel="preload" href="css2/normalize.css" as="style">
@@ -26,14 +26,19 @@
     <div class="nav-background"> <!-- Usado para acomodar a lo largo el color de fondo -->
         <nav class="navegacion-principal contenedor"> <!-- Usado para links de navegación de UN NIVEL -->
             <a href="index.html"> Inicio </a>  <!-- Son links a otras pestañas -->
-            <a href="inicio.html"> Nuestro trabajo </a>  <!-- Son links a otras pestañas -->
+            <a href="inicio.html"> Nosotros </a>  <!-- Son links a otras pestañas -->
             <a href="ofertas.html"> Paquetes y ofertas </a>
-            <a href="contacto.html"> Contacto </a>
         </nav>
     </div>
+    
+    <!--<sec>
+        <img src="imagenes/pltron.jpeg" alt="logo">
+    </sec>-->
 
     <!-- **************** Título del contenido ***************************-->
     <main class="contenedorInicio">
+
+        <hr>
 
         <h1 class="sobreNosotros_texto"> Sobre nosotros </h1>
 
@@ -48,43 +53,65 @@
                 </P>
 
                 <p class="nosotros_slogan">
-                    NUESTROS CLIENTES SON PRIMERO
+                    <br> <em>NUESTROS CLIENTES SON PRIMERO </em>
                 </p>
-
             </div>
+
+            <img class="nuestraChamba__imagen" src="imagenes/ingenieriaelectronica.jpg" alt="imagen nosotros"> </imag>
         </div>
-
-
     </main>
     
     <!--******************************** Imagenes mini ************************-->
-    <section class="contenedor comprar">
+    <section class="contenedor_comprar">
         <h2 class="comprar__titulo"> ¿Por qué comprar con nosotros? </h2> <!-- h2 propiedad de BEM -->
 
         <div class="bloques">
 
             <div class="bloque">
-                <img class="bloque__imagen" src="imagenes/icono_1.png" alt="icono1">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-businessplan" width="88" height="88" viewBox="0 0 24 24" stroke-width="2" stroke="#FFFFFF" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M16 6m-5 0a5 3 0 1 0 10 0a5 3 0 1 0 -10 0" />
+                    <path d="M11 6v4c0 1.657 2.239 3 5 3s5 -1.343 5 -3v-4" />
+                    <path d="M11 10v4c0 1.657 2.239 3 5 3s5 -1.343 5 -3v-4" />
+                    <path d="M11 14v4c0 1.657 2.239 3 5 3s5 -1.343 5 -3v-4" />
+                    <path d="M7 9h-2.5a1.5 1.5 0 0 0 0 3h1a1.5 1.5 0 0 1 0 3h-2.5" />
+                    <path d="M5 15v1m0 -8v1" />
+                </svg>
                 <h3 class="bloque__titulo"> El mejor precio </h3>
-                <p> jbcweibvuvtrvu3viqubeciqbeciqebrucvquerv </p>
+                <p class="bloque__contenido"> Precios completamente accesibles para el bolsillo de nuestros clientes </p>
             </div>
 
             <div class="bloque">
-                <img class="bloque__imagen" src="imagenes/icono_2.png" alt="icono2">
-                <h3 class="bloque__titulo"> Para Devs </h3>
-                <p> jbcweibvuvtrvu3viqubeciqbeciqebrucvquerv </p>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-users" width="88" height="88" viewBox="0 0 24 24" stroke-width="2" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M9 7m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0" />
+                    <path d="M3 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+                    <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                    <path d="M21 21v-2a4 4 0 0 0 -3 -3.85" />
+                </svg>
+                <h3 class="bloque__titulo"> Atención personalizada </h3>
+                <p class="bloque__contenido"> Nos moldeamos a las necesidades personales de cada uno de nuestros clientes </p>
             </div>
 
             <div class="bloque">
-                <img class="bloque__imagen" src="imagenes/icono_3.png" alt="icono3">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock-shield" width="88" height="88" viewBox="0 0 24 24" stroke-width="2" stroke="#FFFFFF" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M21 12a9 9 0 1 0 -8.98 9" />
+                    <path d="M12 7v5l1 1" />
+                    <path d="M22 16c0 4 -2.5 6 -3.5 6s-3.5 -2 -3.5 -6c1 0 2.5 -.5 3.5 -1.5c1 1 2.5 1.5 3.5 1.5z" />
+                </svg>
                 <h3 class="bloque__titulo"> Entregas puntuales </h3>
-                <p> jbcweibvuvtrvu3viqubeciqbeciqebrucvquerv </p>
+                <p class="bloque__contenido"> Responsabilidad y puntualidad con el plazo de nuestras entregas </p>
             </div>
 
             <div class="bloque">
-                <img class="bloque__imagen" src="imagenes/icono_4.png" alt="icono4">
-                <h3 class="bloque__titulo"> Calidad inigualable </h3>
-                <p> jbcweibvuvtrvu3viqubeciqbeciqebrucvquerv </p>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-shield-check" width="88" height="88" viewBox="0 0 24 24" stroke-width="2" stroke="#FFFFFF" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M11.46 20.846a12 12 0 0 1 -7.96 -14.846a12 12 0 0 0 8.5 -3a12 12 0 0 0 8.5 3a12 12 0 0 1 -.09 7.06" />
+                    <path d="M15 19l2 2l4 -4" />
+                </svg>
+                <h3 class="bloque__titulo"> Calidad garantizada </h3>
+                <p class="bloque__contenido"> Garantizamos calidad en todas nuestras entregas y presentaciones </p>
             </div>
         </div>
 

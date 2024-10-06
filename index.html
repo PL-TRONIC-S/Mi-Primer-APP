@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Información para el navegador -->
-    <title>LSL</title>
+    <title> PL TRONIC'S</title>
     <!-- SE AGREGA EL NORMALIZE, IMPORTANTE: ESTE DEBE SER SIEMPRE EL PRIMERO -->
      <link rel="preload" href="css/normalize.css" as="style">
      <link rel="stylesheet" href="css/normalize.css">
@@ -38,9 +38,8 @@
     <div class="nav-background"> <!-- Usado para acomodar a lo largo el color de fondo -->
         <nav class="navegacion-principal contenedor"> <!-- Usado para links de navegación de UN NIVEL -->
             <a href="index.html"> Inicio </a>  <!-- Son links a otras pestañas -->
-            <a href="inicio.html"> Nuestro trabajo </a>  <!-- Son links a otras pestañas -->
+            <a href="inicio.html"> Nosotros </a>  <!-- Son links a otras pestañas -->
             <a href="ofertas.html"> Paquetes y ofertas </a>
-            <a href="contacto.html"> Contacto </a>
         </nav>
     </div>
 
@@ -61,18 +60,18 @@
                 Ixtapan de la Sal, Edo. de México 
             </div>
     
-            <a class="boton" href="contacto.html"> Contactar </a>
+            <a class="boton" href="#formularioGeneral"> Contactar </a>
         </div>
     </section>
 
     <main class="contenedorsombra"> <!-- Elemento principal (solo debe existir un main) -->
 
-        <h3 class="titulomisservicios"> MIS SERVICIOS </h3> <!-- ETIQUETA TRES -->
+        <h3 class="titulomisservicios"> NUESTROS SERVICIOS </h3> <!-- ETIQUETA TRES -->
 
         <div class="servicio">
 
             <section class="servicios">
-                <h4> Diseño electrónico </h4>
+                <h4 class="servicios_titulos"> Diseño electrónico </h4>
 
                 <div class="iconos">
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-cpu" width="80" height="80" viewBox="0 0 24 24" stroke-width="2" stroke="#009988" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -90,15 +89,20 @@
                     </svg>
                 </div>
 
-                <p> Lleva a la realidad tus diseños electrónicos en manos de profesionales. </p> 
+                <p> Lleva a la realidad tus diseños electrónicos en manos de profesionales.
                     
-                <p>   Incluimos diseños de 
-                    bafles, amplificadores de audio, herramientas de laboratorio como: fuentes de poder, generador
-                    de señales y mucho más...Cotiza con nosotros</p>
+                <br> <br> Incluimos diseños de 
+                <ul>
+                    <li> Bafles </li> 
+                    <li> Amplificadores de audio </li>
+                    <li> Herramientas de laboratorio como: fuentes de poder, generador de señales y mucho más... </li>
+                </ul>
+                
+                <br> <br> Cotiza con nosotros</p>
             </section>
 
             <section class="servicios">
-                <h4> Renta de audio </h4>
+                <h4 class="servicios_titulos"> Renta de audio </h4>
 
                 <div class="iconos">
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-deezer" width="80" height="80" viewBox="0 0 24 24" stroke-width="2" stroke="#009988" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -116,12 +120,23 @@
                     </svg>
                 </div>
 
-                <p> Estamos presentes en tus eventos! Amenizamos todo tipo de eventos: XV años, bodas, cumpleaños, presentaciones
-                    y demás, nuestra experiencia y calidad nos respalda. </p>
+                <p> Estamos presentes en tus eventos! 
+                    
+                    <br> <br> Amenizamos todo tipo de eventos: 
+                    
+                    <ul>
+                        <li> XV años </li>
+                        <li> Bodas </li>
+                        <li> Presentaciones </li>
+                        <li> Aniversarios </li>
+                        <li> Cumpleaños </li>
+                    </ul>
+                    
+                    <br> <br> Nuestra experiencia y calidad nos respalda. </p>
             </section>
 
             <section class="servicios">
-                <h4> Diseño web </h4>
+                <h4 class="servicios_titulos"> Diseño web </h4>
 
                 <div class="iconos">
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-device-laptop" width="80" height="80" viewBox="0 0 24 24" stroke-width="2" stroke="#009988" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -137,6 +152,47 @@
         </div> <!-- Cierre de clase sercicios -->
 
     </main>
+
+    <section id="formularioGeneral">
+        <h3 class="titulomisservicios"> CONTÁCTANOS </h3>
+
+        <form class="formulario"> <!-- Inicia el formulario -->
+            <fieldset>
+                <legend> Contáctanos llenando todos los campos </legend>
+
+
+                <div class="contenedor-campos">
+                    <div class="campo">
+                        <label> Nombre </label> <!-- Etiqueta de nombre -->
+                        <input class="input-text" type="text" placeholder="Nombre">     <!-- Cpn esto se crea el recuadro de nombre -->    
+                    </div>
+
+                    <div class="campo">
+                        <label> Teléfono </label> <!-- Etiqueta de nombre -->
+                        <input class="input-text" type="tel" placeholder="Teléfono">     <!-- Cpn esto se crea el recuadro de nombre -->
+                    </div>
+
+                    <div class="campo">
+                        <label> Correo </label> <!-- Etiqueta de nombre -->
+                        <input class="input-text" type="email" placeholder="abc@mail.com">     <!-- Cpn esto se crea el recuadro de nombre -->
+                    </div>
+
+                    <div class="campo">
+                        <label> Mensaje </label>
+                        <textarea class="input-text"></textarea>
+                    </div>
+                </div> <!-- Contenedor de los campos -->
+
+
+                <div class="alineacion flex">
+                    <input class="boton w-100" type="submit" value="Enviar">
+                </div>
+
+            </fieldset>
+        </form>
+
+    </section>
+
 
     <footer class="footer"> <!-- Pie de la página web -->
         <p> Todos los derechos reservados. Lorena Salazar Freelancer </p>
