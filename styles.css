@@ -34,7 +34,7 @@ html{ /* Colocamos un tamaño estándar de letra para nuestra página web*/
 body{
     font-size: 16px; /* Colocamos un tamaño estándar de letra para nuestra página web 1rem=10px*/
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;/*"Font Awesome 6 Pro"; /*"DM Serif Text", serif;*/
-    background-color: var(--white);
+    background-color: var(--black);
     /*background-image: linear-gradient(to top, var(--black) 100%, var(--white) 0%);*/
 }
 
@@ -248,15 +248,20 @@ p{
     display:flex;
     flex-direction: column;
     align-items: center;
+    box-shadow: var(--gray) 0px 3px 6px, var(--gray) 0px 3px 6px;
+    margin-bottom: 2rem;
+    color: var(--white);
 }
 
+
 .servicios h4{
-    color: var(--black);
+    color: var(--white);
     font-size: 2rem;
 }
 
 .servicios p{
     line-height: 2rem;
+    color: var(--white);
 }
 
 .servicios .iconos{
@@ -270,13 +275,25 @@ p{
     align-items: center;
 }
 
+.slogan_diseñoelectronico{
+    color: var(--orange);
+}
+
+ul{
+    color: var(--white);
+}
+
+br{
+    color: var(--white);
+}
+
 /*---------------------------- FORMULARIO ------------------------------*/
 /*.formularioGeneral{
     background-color: var(--orange);
 }*/
 
 .formulario{
-    background-color: var(--brownL);
+    background-color: var(--gray);
     width: min(60rem, 100%); /* Utiliza el valor más pequeño */
     margin: 0 auto; /* (ALINEA HORIZONTALMENTE) Usamos magin para centrar CUANDO su padre no es un display flex*/
     padding: 2rem;
@@ -333,18 +350,22 @@ p{
     border-radius: .5rem;
 }
 
+.titulomisservicios{
+    color: var(--white);
+}
+
 /*---------------------------- FOOTER ----------------------------------*/
 .footer{
     text-align: center;
-    background-color: var(--black);
+    background-color: var(--gray);
     color: var(--white);
-    margin: 8rem, 8rem;
+    /*margin: 3rem, 8rem;*/
     display:block;
     text-align: center;
-    padding: 0.5rem; /* Dibuja el cuadro que aparece al seleccionar un parametro de la navegación */
+    padding: 0.1rem; /* Dibuja el cuadro que aparece al seleccionar un parametro de la navegación */
     text-decoration: none; /* Elimina el subrayado de los enlaces */
     color:var(--white);    /* Esto le da color a las letras */
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 /*---------------------- COMENZANDO CON NOSOTROS ----------------------*/
@@ -400,14 +421,18 @@ p{
     color: var(--white);
 }
 
-.nuestraChamba__contenido{
-
+.nuestraChamba__imagen{ /*Modifica el tamaño del celular*/
+    height: 30rem;
+    width: 47rem;
+    align-items: center;
 }
 
-.nuestraChamba__imagen{
-    height: 30rem;
-    width: 50rem;
-    align-items: center;
+@media (min-width: 768px){ /*Modifica el tamaño de la laptop*/
+    .nuestraChamba__imagen{
+        height: 30rem;
+        width: 50rem;
+        align-items: center;
+    }
 }
 
 
@@ -454,6 +479,7 @@ p{
 
 .bloque{
     text-align: center;
+    margin-bottom: 3rem;
 }
 
 .bloque__imagen{
@@ -476,4 +502,27 @@ p{
 /*-------------------------- imagen de fondo --------------------------*/
 .ofertas{
     background-color: var(--black);
+}
+
+.bafles__imagen{
+    height: 30rem;
+    width: 80rem;
+}
+
+@media (min-width: 768px){
+    .bafles{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+        color: var(--white);
+    }
+
+    .bafles__imagen{  
+        height: 30rem;
+        width: 80rem;
+    }
+
+    .bafles__contenido{
+        text-align: left;
+    }
 }
